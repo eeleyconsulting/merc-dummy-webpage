@@ -1,0 +1,44 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes-Benz</title>
+    <link rel="stylesheet" href="mercedes.css"> 
+</head>
+<body>
+<div class="container" id="bike">
+    <nav>
+        <img src="images/merclogo.png" class="logo">
+        <a href="#" class="btn">Test Drive</a>
+    </nav>
+<div class="content">
+    <h2>THE MERCEDES-BENZ</h2>
+    <h1>S-CLASS</h1>
+    <p>The strength of the S-CLASS is in its technology and comfort. The car not only delivers fun in the big-city tumult, but also when you are redefining the city limits when changing corners quickly</p>
+    <h3>CHOOSE YOUR COLOUR</h3>
+    <div class="colour-select">
+        <div id="red"></div>
+        <div id="blue"></div>
+        <div id="black"></div>
+    </div>
+</div>
+</div>    
+ <script>
+let redBtn = document.getElementById("red")
+let blueBtn = document.getElementById("blue")
+let blackBtn = document.getElementById("black")
+let bike = document.getElementById("bike")
+
+redBtn.onclick = function(){
+    bike.style.backgroundImage = "url(images/MERC1.jpg)"
+}
+blueBtn.onclick = function(){
+    bike.style.backgroundImage = "url(images/MERC2.jpg)"
+}
+blackBtn.onclick = function(){
+    bike.style.backgroundImage = "url(images/MERC3.jpg)"
+}
+
+ </script> 
+
+</body>
+</html>
